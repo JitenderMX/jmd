@@ -14,7 +14,7 @@ html {
 
 .th-btn {
     font-family: var(--font-family);
-    font-size: 1rem;
+    font-size: clamp(.8rem, 3vw,1rem);
     font-weight: 500;
     line-height: 24px;
     text-align: center;
@@ -50,10 +50,40 @@ h1 {
     font-weight: 400;
     text-align: center;
 }
-h2{
-font-family: var(--font-family);
-font-size: clamp(1rem, 2vw, 2.4rem);
-font-weight: 400;
+
+h2 {
+    font-family: var(--font-family);
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-weight: 400;
+}
+
+h5 {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-family: var(--font-family);
+}
+
+h6 {
+    font-family: var(--font-family);
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 400;
+
+}
+
+.sec-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D1CFCF;
+    margin-bottom: 80px;
+}
+
+.sec-head img {
+    max-width: 20px;
+}
+
+.sec-head h6 {
+    margin: 0px;
 }
 
 p {
@@ -64,7 +94,7 @@ p {
     text-align: center;
 }
 
-/* Header Strat ============ */
+/* Header Start ============ */
 .navbar {
     background-color: var(--color-1) !important;
     padding: 20px 0px;
@@ -90,51 +120,52 @@ p {
 }
 
 /* ============ Header End */
-/* Hero Strat ============ */
+/* Hero Start ============ */
 .hero {
     background-color: var(--color-1);
     padding-top: 200px;
     padding-bottom: 350px;
     position: relative;
 }
-.hero::before{
-content: " ";
-width: 100%;
-height: 100px;
-position: absolute;
-bottom: 0px;
-left: 0px;
-z-index: 10;
-background: linear-gradient(to top, #12260F 27.34%, rgba(2, 34, 27, 0) 98.49%);
+
+.hero::before {
+    content: " ";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    background: linear-gradient(to top, #12260F 27.34%, rgba(2, 34, 27, 0) 98.49%);
 
 }
 
 .floting-img #hero-img-1 {
-    max-width: 14rem;
+    max-width: 18vw;
     position: absolute;
     top: 8.5rem;
     left: 0;
 }
 
 .floting-img #hero-img-2 {
-    max-width: 14rem;
+    max-width: 18vw;
     position: absolute;
     top: 8.5rem;
     right: 0;
 }
 
 .floting-img #hero-img-3 {
-    max-width: 24rem;
+    max-width: 24vw;
     position: absolute;
     bottom: 0px;
-    left: 10rem;
+    left: 15vw;
 }
 
 .floting-img #hero-img-4 {
-    max-width: 16rem;
+    max-width: 20vw;
     position: absolute;
     bottom: 0px;
-    right: 15rem;
+    right: 20vw;
 }
 
 .hero h1 {
@@ -146,3 +177,366 @@ background: linear-gradient(to top, #12260F 27.34%, rgba(2, 34, 27, 0) 98.49%);
 }
 
 /* ============ Hero End */
+
+/* Trusted Partners Start ============ */
+.trusted-partners {
+    padding: 50px 0;
+    background-color: var(--color-1);
+    text-align: center;
+}
+
+.trusted-partners h2 {
+    color: var(--color-2);
+}
+
+/* ============ Trusted Partners End */
+
+/* About Start ============ */
+.about-us {
+    padding: 80px 0;
+}
+
+.about-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.about-card:first-child,
+.about-card:last-child {
+    background-color: var(--color-4);
+
+}
+
+/* ============ About End */
+
+
+/* Our Product Start ============ */
+.our-product {
+    padding: 80px 0px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.product-inner {
+    /* max-width: 1200px; */
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+
+.product-inner::-webkit-scrollbar {
+    height: 5px;
+}
+
+.product-inner::-webkit-scrollbar-thumb {
+    background: var(--color-4);
+}
+
+.product-inner::-webkit-scrollbar-track {
+    background: #5C5C5C99;
+    height: 2px !important;
+}
+
+.pro-scr-items {
+    position: relative;
+    /* width: 400px !important; */
+}
+
+.pro-scr-items img {
+    width: 100%;
+}
+
+.pro-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.pro-scr-items:first-child .pro-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pro-scr-items:hover .pro-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-inner {
+    /* width: 150%; */
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 350px);
+}
+
+/* ============ Our Product End */
+
+/* Why Choose Start ============ */
+.why-choose-us {
+    padding: 80px 0;
+}
+
+.why-choose-box img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.why-choose-box h5 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-align: left;
+}
+
+.why-choose-box p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #646A69;
+}
+
+.why-choose-box a {
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+/* ============ Why Choose End */
+
+/* Sectors we cater Start ============ */
+.sectors-we-cater {
+    background-color: #FFFBEE;
+    padding: 80px 0;
+}
+
+.sectors-we-cater h5 {
+    font-weight: 500;
+    color: var(--color-4);
+}
+
+.sec-head {
+    margin-bottom: 50px;
+}
+.sec-tab-box .sec-tab-head h2 {
+    color: #929C9A;
+}
+.sec-tab-box.active .sec-tab-head h2 {
+    color: var(--color-3);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D9DEDD;
+    position: relative;
+    transition: .5s;
+}
+.sec-tab-box.active .sec-tab-head h2::after {
+    content: ' ';
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-4);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+.sec-tab-box .sec-tab-text p{
+    text-align: start;
+    color: #646A69;
+}
+.sec-tab-box .sec-tab-text a {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+/* ============ Sectors we cater End */
+
+/* Our Placements Start ============ */
+.our-placements{
+    padding: 80px 0;
+}
+/* ============ Our Placements End */
+
+
+/* Contact Us Start ============ */
+.contact-us{
+    padding: 80px 0;
+}
+.contact-info {
+    max-width: 330px;
+}
+.contact-icon .fal{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #DADADA;
+}
+.contact-text h5{
+    font-weight: 700;    
+}
+.contact-text p{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.contact-text a{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--color-3);
+    text-decoration: none;
+}
+.contact-form{
+    padding: 25px;
+    background-color: var(--color-1);
+    border-radius: 25px;
+}
+.contact-form h2
+{
+    color: var(--color-2);
+}
+.contact-form p
+{
+    color: var(--color-2);
+    text-align: left;
+    font-size: 14px;
+}
+.contact-form label{
+font-family: var(--font-family);
+font-size: 14px;
+font-weight: 500;
+color: #A8A8A8;
+}
+.contact-form input,
+.contact-form textarea{
+font-family: var(--font-family);
+color: #A8A8A8;
+background-color: #172E13;
+border: none;
+display: block  ;
+width: 100%;
+padding: 10px;
+border-radius: 33px;
+margin-top: 10px;
+}
+/* ============ Contact Us End */
+
+
+/* Get In Touch Start ============ */
+.get-in-touch{
+    background-color: var(--color-1);
+}
+.get-text{
+    padding: 50px 100px; 
+}
+.get-text h2{
+    color: var(--color-2);
+}
+.get-text p{
+color: var(--color-2);
+text-align: start;
+}
+.get-img{
+    max-width: 800px;
+}
+.get-text input{
+    font-family: var(--font-family);
+color: #A8A8A8;
+background-color: var(--color-2);
+border: none;
+display: block  ;
+/* width: 100%; */
+padding: 10px;
+border-radius: 33px;
+}
+/* ============ Get In Touch End */
+
+/* Footer Start ============ */
+footer{
+    padding: 50px 0;
+    background-color: var(--color-1);
+    position: relative;
+}
+footer .foot-lines{
+    max-width: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+footer .foot-img{
+    max-width: 150px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li:first-child{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-2);
+}
+footer ul li a{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-2);
+    text-decoration: none;
+}
+footer ul li a .th-btn{
+    font-size: 16px;
+}
+.foot-so-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #FFFFFF3D;
+        border-radius: 100px;
+        padding: 10px;
+}
+.foot-so-box{
+    color: var(--color-2);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.foot-so-box .fab{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--color-4);
+    border-radius: 50%;
+    color: var(--color-1);
+}
+.foot-bottom p{
+font-family: var(--font-family);
+font-size: 14px;
+font-weight: 400;
+color: var(--color-2);
+text-align: right;
+}
+/* ============ Footer End */
+
