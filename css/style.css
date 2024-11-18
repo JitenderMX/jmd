@@ -16,10 +16,10 @@ html {
     font-family: var(--font-family);
     font-size: clamp(.8rem, 3vw,1rem);
     font-weight: 500;
-    line-height: 24px;
+    line-height: 30px;
     text-align: center;
     color: var(--color-2);
-    padding: 10px 20px;
+    padding: 14px 20px;
     border: 1px solid var(--color-2);
     text-decoration: none;
     border-radius: 50px;
@@ -46,7 +46,7 @@ html {
 
 h1 {
     font-family: var(--font-family);
-    font-size: clamp(1.5rem, 5vw, 5rem);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
     font-weight: 400;
     text-align: center;
 }
@@ -88,10 +88,9 @@ h6 {
 
 p {
     font-family: var(--font-family);
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.7rem, 2vw, .8rem);
+    line-height: 130%;
     font-weight: 400;
-    letter-spacing: -0.004em;
-    text-align: center;
 }
 
 /* Header Start ============ */
@@ -124,7 +123,7 @@ p {
 .hero {
     background-color: var(--color-1);
     padding-top: 200px;
-    padding-bottom: 350px;
+    padding-bottom: 420px;
     position: relative;
 }
 
@@ -143,14 +142,14 @@ p {
 .floting-img #hero-img-1 {
     max-width: 18vw;
     position: absolute;
-    top: 8.5rem;
+    top: 5rem;
     left: 0;
 }
 
 .floting-img #hero-img-2 {
     max-width: 18vw;
     position: absolute;
-    top: 8.5rem;
+    top: 5rem;
     right: 0;
 }
 
@@ -158,14 +157,14 @@ p {
     max-width: 24vw;
     position: absolute;
     bottom: 0px;
-    left: 15vw;
+    left: 10vw;
 }
 
 .floting-img #hero-img-4 {
     max-width: 20vw;
     position: absolute;
     bottom: 0px;
-    right: 20vw;
+    right: 10vw;
 }
 
 .hero h1 {
