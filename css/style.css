@@ -58,8 +58,9 @@ h1 {
 
 h2 {
     font-family: var(--font-family);
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     font-weight: 400;
+    line-height: 120%;
 }
 
 h5 {
@@ -94,7 +95,7 @@ h6 {
 p {
     font-family: var(--font-family);
     font-size: clamp(0.7rem, 2vw, .8rem);
-    line-height: 130%;
+    line-height: 150%;
     font-weight: 400;
 }
 
@@ -152,14 +153,14 @@ p {
 }
 
 .floting-img #hero-img-2 {
-    max-width: 18vw;
+    max-width: 20vw;
     position: absolute;
     top: 5rem;
     right: 0;
 }
 
 .floting-img #hero-img-3 {
-    max-width: 24vw;
+    max-width: 30vw;
     position: absolute;
     bottom: 0px;
     left: 10vw;
@@ -219,7 +220,6 @@ p {
 .about-card:first-child,
 .about-card:last-child {
     background-color: var(--color-4);
-
 }
 
 /* ============ About End */
