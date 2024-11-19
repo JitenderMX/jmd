@@ -388,6 +388,18 @@ p {
 .testimonial {
     padding: 50px 0;
 }
+/* .testimonial-slider{
+    position: relative;
+}
+.testimonial-slider::after{
+    content: ' ';
+    width: 140%;
+    height: 80%;
+    color: #F5FAF9;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
 .testimonial-inner {
     display: flex;
     flex-direction: column;
