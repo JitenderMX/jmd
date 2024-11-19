@@ -14,6 +14,9 @@
     .get-text {
         padding: 50px;
     }
+    .hero {
+        padding:100px 0px 300px 0px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
