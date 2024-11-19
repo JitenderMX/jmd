@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --color-1: #12260F;
+    --color-1: #EFFFE0;
     --color-2: #ffffff;
     --color-3: #000000;
     --color-4: #FCC40F;
@@ -14,22 +14,28 @@ html {
 
 .th-btn {
     font-family: var(--font-family);
-    font-size: clamp(.8rem, 3vw,1rem);
+    font-size: clamp(.8rem, 3vw, 1rem);
     font-weight: 500;
     line-height: 30px;
     text-align: center;
-    color: var(--color-2);
+    color: var(--color-3);
     padding: 14px 20px;
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--color-3);
     text-decoration: none;
     border-radius: 50px;
     display: inline-block;
     transition: .5s;
 }
 
+.th-btn:hover {
+    background-color: var(--color-2);
+    border: 1px solid var(--color-2);
+    transform: scale(1.05);
+}
+
 .th-btn.yellow {
     background-color: var(--color-4);
-    color: var(--color-1);
+    color: var(--color-3);
     border: 1px solid var(--color-4);
 }
 
@@ -38,11 +44,7 @@ html {
     background-color: var(--color-4);
 }
 
-.th-btn:hover {
-    background-color: var(--color-2);
-    color: var(--color-1);
-    transform: scale(1.05);
-}
+
 
 h1 {
     font-family: var(--font-family);
@@ -110,7 +112,7 @@ p {
     line-height: 1.2rem;
     letter-spacing: -0.004em;
     text-align: center;
-    color: var(--color-2);
+    color: var(--color-3);
 
 }
 
@@ -135,7 +137,7 @@ p {
     bottom: 0px;
     left: 0px;
     z-index: 10;
-    background: linear-gradient(to top, #12260F 27.34%, rgba(2, 34, 27, 0) 98.49%);
+    background: linear-gradient(to top, #EFFFE0 27.34%, rgba(2, 34, 27, 0) 98.49%);
 
 }
 
@@ -168,11 +170,11 @@ p {
 }
 
 .hero h1 {
-    color: var(--color-2);
+    color: var(--color-3);
 }
 
 .hero p {
-    color: var(--color-2);
+    color: var(--color-3);
 }
 
 /* ============ Hero End */
@@ -185,7 +187,7 @@ p {
 }
 
 .trusted-partners h2 {
-    color: var(--color-2);
+    color: var(--color-3);
 }
 
 /* ============ Trusted Partners End */
@@ -224,7 +226,7 @@ p {
 .our-product {
     padding: 80px 0px;
     background-color: var(--color-1);
-    color: var(--color-2);
+    color: var(--color-3);
 }
 
 .product-inner {
@@ -232,6 +234,7 @@ p {
     overflow-x: scroll;
     padding-bottom: 20px;
     margin-top: 80px;
+    color: var(--color-2);
 }
 
 .product-inner::-webkit-scrollbar {
@@ -336,9 +339,11 @@ p {
 .sec-head {
     margin-bottom: 50px;
 }
+
 .sec-tab-box .sec-tab-head h2 {
     color: #929C9A;
 }
+
 .sec-tab-box.active .sec-tab-head h2 {
     color: var(--color-3);
     padding-bottom: 10px;
@@ -346,6 +351,7 @@ p {
     position: relative;
     transition: .5s;
 }
+
 .sec-tab-box.active .sec-tab-head h2::after {
     content: ' ';
     width: 50%;
@@ -355,35 +361,101 @@ p {
     bottom: -2px;
     left: 0;
 }
-.sec-tab-box .sec-tab-text p{
+
+.sec-tab-box .sec-tab-text p {
     text-align: start;
     color: #646A69;
 }
+
 .sec-tab-box .sec-tab-text a {
     font-family: var(--font-family);
     font-size: 18px;
     font-weight: 500;
-    color: var(--color-1);
+    color: var(--color-3);
     text-decoration: none;
 }
 
 /* ============ Sectors we cater End */
 
 /* Our Placements Start ============ */
-.our-placements{
+.our-placements {
     padding: 80px 0;
 }
+
 /* ============ Our Placements End */
+
+/* Testimonial Start ============ */
+.testimonial {
+    padding: 50px 0;
+}
+.testimonial-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #575C5629;
+}
+
+.test-img {
+    max-width: 100px;
+    margin: auto;
+}
+
+.test-img img {
+    width: 100%;
+}
+
+.test-stars {
+    color: #FCC40F;
+}
+
+.test-text p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.test-name {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+.test-desig {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #646A69;
+    text-align: center;
+}
+.test-arrow{
+    font-size: 32px;
+    color: #646A69;
+    text-align: center;
+}
+
+/* ============ Testimonial End */
 
 
 /* Contact Us Start ============ */
-.contact-us{
+.contact-us {
     padding: 80px 0;
 }
+
 .contact-info {
     max-width: 330px;
 }
-.contact-icon .fal{
+
+.contact-icon .fal {
     width: 48px;
     height: 48px;
     line-height: 48px;
@@ -391,16 +463,19 @@ p {
     text-align: center;
     border: 1px solid #DADADA;
 }
-.contact-text h5{
-    font-weight: 700;    
+
+.contact-text h5 {
+    font-weight: 700;
 }
-.contact-text p{
+
+.contact-text p {
     font-size: 14px;
     font-weight: 500;
     text-align: left;
     margin-bottom: 5px;
 }
-.contact-text a{
+
+.contact-text a {
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 500;
@@ -408,134 +483,154 @@ p {
     color: var(--color-3);
     text-decoration: none;
 }
-.contact-form{
+
+.contact-form {
     padding: 25px;
     background-color: var(--color-1);
     border-radius: 25px;
 }
-.contact-form h2
-{
-    color: var(--color-2);
+
+.contact-form h2 {
+    color: var(--color-3);
 }
-.contact-form p
-{
-    color: var(--color-2);
+
+.contact-form p {
+    color: var(--color-3);
     text-align: left;
     font-size: 14px;
 }
-.contact-form label{
-font-family: var(--font-family);
-font-size: 14px;
-font-weight: 500;
-color: #A8A8A8;
+
+.contact-form label {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-3);
 }
+
 .contact-form input,
-.contact-form textarea{
-font-family: var(--font-family);
-color: #A8A8A8;
-background-color: #172E13;
-border: none;
-display: block  ;
-width: 100%;
-padding: 10px;
-border-radius: 33px;
-margin-top: 10px;
+.contact-form textarea {
+    font-family: var(--font-family);
+    color: var(--color-3);
+    background-color: #E2F5CE;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 33px;
+    margin-top: 10px;
 }
+
 /* ============ Contact Us End */
 
 
 /* Get In Touch Start ============ */
-.get-in-touch{
+.get-in-touch {
     background-color: var(--color-1);
 }
-.get-text{
-    padding: 50px 100px; 
+
+.get-text {
+    padding: 50px 100px;
 }
-.get-text h2{
-    color: var(--color-2);
+
+.get-text h2 {
+    color: var(--color-3);
 }
-.get-text p{
-color: var(--color-2);
-text-align: start;
+
+.get-text p {
+    color: var(--color-3);
+    text-align: start;
 }
-.get-img{
+
+.get-img {
     max-width: 800px;
 }
-.get-text input{
+
+.get-text input {
     font-family: var(--font-family);
-color: #A8A8A8;
-background-color: var(--color-2);
-border: none;
-display: block  ;
-/* width: 100%; */
-padding: 10px;
-border-radius: 33px;
+    color: #A8A8A8;
+    background-color: var(--color-2);
+    border: none;
+    display: block;
+    /* width: 100%; */
+    padding: 10px;
+    border-radius: 33px;
 }
+
 /* ============ Get In Touch End */
 
 /* Footer Start ============ */
-footer{
+footer {
     padding: 50px 0;
     background-color: var(--color-1);
     position: relative;
 }
-footer .foot-lines{
+
+footer .foot-lines {
     max-width: 500px;
     position: absolute;
     bottom: 0;
     left: 0;
 }
-footer .foot-img{
+
+footer .foot-img {
     max-width: 150px;
 }
-footer ul{
+
+footer ul {
     list-style: none;
 }
-footer ul li:first-child{
+
+footer ul li:first-child {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-2);
+    color: var(--color-3);
 }
-footer ul li a{
+
+footer ul li a {
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-2);
+    color: var(--color-3);
     text-decoration: none;
 }
-footer ul li a .th-btn{
+
+footer ul li a .th-btn {
     font-size: 16px;
 }
-.foot-so-box{
+
+.foot-so-box {
     display: flex;
     align-items: center;
     gap: 15px;
     background-color: #FFFFFF3D;
-        border-radius: 100px;
-        padding: 10px;
+    border-radius: 100px;
+    padding: 10px;
 }
-.foot-so-box{
-    color: var(--color-2);
+
+.foot-so-box {
+    color: var(--color-3);
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 16px;
 }
-.foot-so-box .fab{
+
+.foot-so-box .fab {
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     background-color: var(--color-4);
     border-radius: 50%;
-    color: var(--color-1);
+    color: var(--color-3);
 }
-.foot-bottom p{
-font-family: var(--font-family);
-font-size: 14px;
-font-weight: 400;
-color: var(--color-2);
-text-align: right;
-}
-/* ============ Footer End */
 
+.foot-bottom p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-3);
+    text-align: right;
+}
+
+/* ============ Footer End */

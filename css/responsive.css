@@ -10,8 +10,9 @@
     .about-card-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .get-text{
-        padding: 50px; 
+
+    .get-text {
+        padding: 50px;
     }
 }
 
@@ -24,45 +25,56 @@
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
-    .hero{
+    .hero {
         padding: 100px 0;
     }
+
     .floting-img #hero-img-1,
     .floting-img #hero-img-2,
     .floting-img #hero-img-3,
-    .floting-img #hero-img-4{
+    .floting-img #hero-img-4 {
         display: none;
     }
+
     .about-card-container {
-       grid-template-rows: 150px 150px;
+        grid-template-rows: 150px 150px;
     }
-    .th-btn{
+
+    .th-btn {
         padding: 10px;
     }
+
     .product-inner {
         grid-template-columns: repeat(4, 200px);
     }
-    .contact-icon .fal{
+
+    .contact-icon .fal {
         width: 35px;
         height: 35px;
         line-height: 35px;
     }
-    .get-text{
+
+    .get-text {
         padding: 50px 10px 20px 10px;
+    }
+
+    #test-left {
+        text-align: end;
+    }
+
+    #test-right {
+        text-align: start;
+    }
+    .test-arrow{
+        margin-top: 20px;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-    footer ul{
+    footer ul {
         margin: 0;
         padding: 0;
     }
+
 }
-
-
-
-
-
-
-
