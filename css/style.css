@@ -419,6 +419,7 @@ p {
 .test-img {
     max-width: 100px;
     margin: auto;
+    border-radius: 50%;
 }
 
 .test-img img {
